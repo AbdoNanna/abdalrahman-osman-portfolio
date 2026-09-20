@@ -1,0 +1,1821 @@
+{
+  "firstName": "Abdalrahman",
+  "lastName": "Osman",
+  "role": "Logistics Manager",
+  "company": "GlowGate Cosmetics",
+  "start": "Jun 2026 – Present",
+  "leadEn": "Hospitality & Tourism Specialist<br>Operations • Customer Experience • Technology",
+  "leadAr": "متخصص في الضيافة والسياحة<br>العمليات • تجربة العملاء • التكنولوجيا",
+  "bioEn": "A Hospitality Management graduate with hands-on experience across hospitality and customer service, currently working as a Logistics Manager at GlowGate Cosmetics. I combine people skills, organization and a practical mindset to create smoother experiences and better workflows.",
+  "bioAr": "خريج إدارة ضيافة بخبرة عملية في الضيافة وخدمة العملاء، وأعمل حاليًا في GlowGate Cosmetics. أجمع بين مهارات التعامل مع الناس والتنظيم والعقلية العملية لصناعة تجارب أفضل وسير عمل أكثر كفاءة.",
+  "aboutTitleEn": "People-first. Organized. Curious.",
+  "aboutTitleAr": "شغوف بالناس. منظم. دائم التعلم.",
+  "aboutEn": "My background is rooted in hospitality: hotel and restaurant operations, guest relations, food & beverage and customer service. I also enjoy technology and building practical digital workflows that solve real problems.",
+  "aboutAr": "خلفيتي الأساسية في مجال الضيافة: عمليات الفنادق والمطاعم، علاقات النزلاء، الأغذية والمشروبات وخدمة العملاء. كما أهتم بالتكنولوجيا وبناء حلول رقمية عملية للمشكلات الحقيقية.",
+  "currentIntroEn": "Managing day-to-day logistics coordination and keeping the order-to-delivery workflow organized, accurate and on track.",
+  "currentIntroAr": "إدارة التنسيق اليومي للوجستيات والحفاظ على سير العمل من الطلب حتى التسليم بشكل منظم ودقيق.",
+  "email": "abdalrahmanosman0@gmail.com",
+  "phone": "+201101019467",
+  "linkedin": "https://www.linkedin.com/",
+  "accent": "#f3b75b",
+  "project1Title": "Logistics Smart Tool",
+  "project1Desc": "A smart workflow concept for organizing orders, recognizing addresses, classifying governorates and preparing shipments.",
+  "project2Title": "Discord Game Bot",
+  "project2Desc": "A monitoring and notification project concept using Node.js, Discord APIs and webhooks.",
+  "project3Title": "Nanna Reply App",
+  "project3Desc": "Android auto-reply app concept for WhatsApp and WhatsApp Business with a custom interface.",
+  "profileImage": "",
+  "cvData": "",
+  "seoTitle": "Abdalrahman Osman — Digital Portfolio",
+  "seoDescription": "Personal portfolio of Abdalrahman Osman — Logistics Manager at GlowGate Cosmetics, Hospitality & Tourism Specialist.",
+  "experienceData": [
+    {
+      "id": "glowgate",
+      "company": "GlowGate Cosmetics",
+      "role": "Logistics Manager",
+      "date": "Jun 2026 – Present",
+      "current": true,
+      "desc": "Managing and coordinating day-to-day logistics operations across order preparation, shipment coordination, address validation, inventory flow, documentation and delivery follow-up.",
+      "items": [
+        "Coordinate order processing, preparation and shipment handover.",
+        "Organize shipping reports and maintain accurate order data.",
+        "Review customer addresses and identify the correct governorate / delivery area.",
+        "Coordinate with shipping partners and follow up on delivery status.",
+        "Track delayed, returned and undelivered shipments and support resolution.",
+        "Coordinate with warehouse, operations, customer service and purchasing teams.",
+        "Monitor inventory movement and support stock organization.",
+        "Prepare and maintain logistics spreadsheets, reports and operational records.",
+        "Verify phone numbers, shipment information and order details before dispatch.",
+        "Improve workflows, reduce manual errors and keep daily operations organized."
+      ]
+    },
+    {
+      "id": "kfc",
+      "company": "KFC, Faysal",
+      "role": "Crew Member",
+      "date": "Jan 2022 – May 2023",
+      "current": false,
+      "desc": "",
+      "items": [
+        "Prepared dishes according to specific recipes.",
+        "Measured ingredients accurately to support food quality.",
+        "Applied frying, grilling and steaming techniques."
+      ]
+    },
+    {
+      "id": "cuba",
+      "company": "Cuba Cabana, Maadi",
+      "role": "Crew Member",
+      "date": "Mar 2021 – Dec 2022",
+      "current": false,
+      "desc": "",
+      "items": [
+        "Welcomed guests, took orders and answered inquiries.",
+        "Recommended food and beverages based on customer needs.",
+        "Handled complaints and coordinated order delivery."
+      ]
+    }
+  ],
+  "serviceData": [
+    {
+      "id": "logistics",
+      "title": "Logistics Management",
+      "icon": "◈",
+      "desc": "Order flow, shipment coordination, delivery follow-up and daily logistics control."
+    }
+  ],
+  "skillData": [
+    {
+      "id": "customer-service",
+      "name": "Customer Service",
+      "level": 95
+    },
+    {
+      "id": "hospitality",
+      "name": "Hospitality Ops",
+      "level": 90
+    },
+    {
+      "id": "cooking",
+      "name": "Cooking & Kitchen",
+      "level": 88
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "level": 90
+    },
+    {
+      "id": "office",
+      "name": "Microsoft Office",
+      "level": 80
+    },
+    {
+      "id": "inventory",
+      "name": "Inventory & POS",
+      "level": 82
+    }
+  ],
+  "educationData": [
+    {
+      "id": "bachelor",
+      "title": "Bachelor’s Degree in Hospitality Management",
+      "meta": "Higher Institute for Specific Studies — Giza • May 2024",
+      "desc": "Hotel and restaurant management, customer service, hospitality operations, food & beverage management, kitchen operations and guest relations."
+    },
+    {
+      "id": "tourism-school",
+      "title": "Tourism Secondary School Certificate",
+      "meta": "Orman Secondary Tourism School — Zahraa El Maadi",
+      "desc": "Specialized study in tourism and hospitality with fundamental industry skills."
+    }
+  ],
+  "certificationData": [
+    {
+      "id": "fidelio",
+      "name": "Fidelio"
+    },
+    {
+      "id": "opera",
+      "name": "Opera"
+    },
+    {
+      "id": "italian-kitchen",
+      "name": "Italian Kitchen"
+    }
+  ],
+  "cms": {
+    "cms_introscreen_01": {
+      "section": "introScreen",
+      "label": "AO",
+      "en": "AO",
+      "ar": "AO",
+      "tag": "div"
+    },
+    "cms_introscreen_02": {
+      "section": "introScreen",
+      "label": "Abdalrahman Osman",
+      "en": "Abdalrahman Osman",
+      "ar": "Abdalrahman Osman",
+      "tag": "div"
+    },
+    "cms_general_01": {
+      "section": "general",
+      "label": "AO",
+      "en": "AO",
+      "ar": "AO",
+      "tag": "span"
+    },
+    "cms_general_02": {
+      "section": "general",
+      "label": "Abdalrahman Osman",
+      "en": "Abdalrahman Osman",
+      "ar": "Abdalrahman Osman",
+      "tag": "span"
+    },
+    "cms_general_03": {
+      "section": "general",
+      "label": "Home",
+      "en": "Home",
+      "ar": "الرئيسية",
+      "tag": "a"
+    },
+    "cms_general_04": {
+      "section": "general",
+      "label": "About",
+      "en": "About",
+      "ar": "عني",
+      "tag": "a"
+    },
+    "cms_general_05": {
+      "section": "general",
+      "label": "Career",
+      "en": "Career",
+      "ar": "المسار",
+      "tag": "a"
+    },
+    "cms_general_06": {
+      "section": "general",
+      "label": "Experience",
+      "en": "Experience",
+      "ar": "الخبرة",
+      "tag": "a"
+    },
+    "cms_general_07": {
+      "section": "general",
+      "label": "Skills",
+      "en": "Skills",
+      "ar": "المهارات",
+      "tag": "a"
+    },
+    "cms_general_08": {
+      "section": "general",
+      "label": "Workflow",
+      "en": "Workflow",
+      "ar": "العمليات",
+      "tag": "a"
+    },
+    "cms_general_09": {
+      "section": "general",
+      "label": "Services",
+      "en": "Services",
+      "ar": "مجالاتي",
+      "tag": "a"
+    },
+    "cms_general_10": {
+      "section": "general",
+      "label": "Projects",
+      "en": "Projects",
+      "ar": "المشاريع",
+      "tag": "a"
+    },
+    "cms_general_11": {
+      "section": "general",
+      "label": "Contact",
+      "en": "Contact",
+      "ar": "تواصل",
+      "tag": "a"
+    },
+    "cms_en_01": {
+      "section": "en",
+      "label": "EN",
+      "en": "EN",
+      "ar": "EN",
+      "tag": "button"
+    },
+    "cms_general_12": {
+      "section": "general",
+      "label": "/",
+      "en": "/",
+      "ar": "/",
+      "tag": "span"
+    },
+    "cms_ar_01": {
+      "section": "ar",
+      "label": "عربي",
+      "en": "عربي",
+      "ar": "عربي",
+      "tag": "button"
+    },
+    "cms_mobilepanel_01": {
+      "section": "mobilePanel",
+      "label": "Home",
+      "en": "Home",
+      "ar": "Home",
+      "tag": "a"
+    },
+    "cms_mobilepanel_02": {
+      "section": "mobilePanel",
+      "label": "About",
+      "en": "About",
+      "ar": "About",
+      "tag": "a"
+    },
+    "cms_mobilepanel_03": {
+      "section": "mobilePanel",
+      "label": "Career",
+      "en": "Career",
+      "ar": "Career",
+      "tag": "a"
+    },
+    "cms_mobilepanel_04": {
+      "section": "mobilePanel",
+      "label": "Experience",
+      "en": "Experience",
+      "ar": "Experience",
+      "tag": "a"
+    },
+    "cms_mobilepanel_05": {
+      "section": "mobilePanel",
+      "label": "Skills",
+      "en": "Skills",
+      "ar": "Skills",
+      "tag": "a"
+    },
+    "cms_mobilepanel_06": {
+      "section": "mobilePanel",
+      "label": "Workflow",
+      "en": "Workflow",
+      "ar": "Workflow",
+      "tag": "a"
+    },
+    "cms_mobilepanel_07": {
+      "section": "mobilePanel",
+      "label": "Services",
+      "en": "Services",
+      "ar": "Services",
+      "tag": "a"
+    },
+    "cms_mobilepanel_08": {
+      "section": "mobilePanel",
+      "label": "Projects",
+      "en": "Projects",
+      "ar": "Projects",
+      "tag": "a"
+    },
+    "cms_mobilepanel_09": {
+      "section": "mobilePanel",
+      "label": "Contact",
+      "en": "Contact",
+      "ar": "Contact",
+      "tag": "a"
+    },
+    "cms_home_01": {
+      "section": "home",
+      "label": "Available for opportunities",
+      "en": "Available for opportunities",
+      "ar": "متاح للفرص الجديدة",
+      "tag": "span"
+    },
+    "cms_home_02": {
+      "section": "home",
+      "label": "👋 Hello, I'm",
+      "en": "👋 Hello, I'm",
+      "ar": "👋 أهلاً، أنا",
+      "tag": "div"
+    },
+    "cms_home_03": {
+      "section": "home",
+      "label": "Logistics Manager",
+      "en": "Logistics Manager",
+      "ar": "Logistics Manager",
+      "tag": "span"
+    },
+    "cms_home_04": {
+      "section": "home",
+      "label": "GlowGate Cosmetics",
+      "en": "GlowGate Cosmetics",
+      "ar": "GlowGate Cosmetics",
+      "tag": "span"
+    },
+    "cms_home_05": {
+      "section": "home",
+      "label": "Jun 2026 – Present",
+      "en": "Jun 2026 – Present",
+      "ar": "Jun 2026 – Present",
+      "tag": "span"
+    },
+    "cms_home_06": {
+      "section": "home",
+      "label": "Download CV",
+      "en": "Download CV",
+      "ar": "تحميل CV",
+      "tag": "span"
+    },
+    "cms_home_07": {
+      "section": "home",
+      "label": "Let's Talk",
+      "en": "Let's Talk",
+      "ar": "تواصل معي",
+      "tag": "span"
+    },
+    "cms_home_08": {
+      "section": "home",
+      "label": "2024",
+      "en": "2024",
+      "ar": "2024",
+      "tag": "strong"
+    },
+    "cms_home_09": {
+      "section": "home",
+      "label": "Graduation",
+      "en": "Graduation",
+      "ar": "Graduation",
+      "tag": "span"
+    },
+    "cms_home_10": {
+      "section": "home",
+      "label": "B1",
+      "en": "B1",
+      "ar": "B1",
+      "tag": "strong"
+    },
+    "cms_home_11": {
+      "section": "home",
+      "label": "English",
+      "en": "English",
+      "ar": "English",
+      "tag": "span"
+    },
+    "cms_home_12": {
+      "section": "home",
+      "label": "3",
+      "en": "3",
+      "ar": "3",
+      "tag": "strong"
+    },
+    "cms_home_13": {
+      "section": "home",
+      "label": "Certifications",
+      "en": "Certifications",
+      "ar": "Certifications",
+      "tag": "span"
+    },
+    "cms_home_14": {
+      "section": "home",
+      "label": "Logistics Manager",
+      "en": "Logistics Manager",
+      "ar": "Logistics Manager",
+      "tag": "strong"
+    },
+    "cms_home_15": {
+      "section": "home",
+      "label": "GlowGate Cosmetics • Jun 2026 – Present",
+      "en": "GlowGate Cosmetics • Jun 2026 – Present",
+      "ar": "GlowGate Cosmetics • Jun 2026 – Present",
+      "tag": "span"
+    },
+    "cms_about_01": {
+      "section": "about",
+      "label": "Profile",
+      "en": "Profile",
+      "ar": "Profile",
+      "tag": "small"
+    },
+    "cms_about_02": {
+      "section": "about",
+      "label": "A little about me",
+      "en": "A little about me",
+      "ar": "نبذة عني",
+      "tag": "h2"
+    },
+    "cms_about_03": {
+      "section": "about",
+      "label": "People-first. Organized. Curious.",
+      "en": "People-first. Organized. Curious.",
+      "ar": "شغوف بالناس. منظم. دائم التعلم.",
+      "tag": "h3"
+    },
+    "cms_about_04": {
+      "section": "about",
+      "label": "My background is rooted in hospitality: hotel and restaurant operation",
+      "en": "My background is rooted in hospitality: hotel and restaurant operations, guest relations, food & beverage and customer service. I also enjoy technology and building practical digital workflows that solve real problems.",
+      "ar": "خلفيتي الأساسية في مجال الضيافة: عمليات الفنادق والمطاعم، علاقات النزلاء، الأغذية والمشروبات وخدمة العملاء. كما أهتم بالتكنولوجيا وبناء حلول رقمية عملية للمشكلات الحقيقية.",
+      "tag": "p"
+    },
+    "cms_about_05": {
+      "section": "about",
+      "label": "2024",
+      "en": "2024",
+      "ar": "2024",
+      "tag": "strong"
+    },
+    "cms_about_06": {
+      "section": "about",
+      "label": "Graduation",
+      "en": "Graduation",
+      "ar": "Graduation",
+      "tag": "span"
+    },
+    "cms_about_07": {
+      "section": "about",
+      "label": "B.Sc.",
+      "en": "B.Sc.",
+      "ar": "B.Sc.",
+      "tag": "strong"
+    },
+    "cms_about_08": {
+      "section": "about",
+      "label": "Hospitality Management",
+      "en": "Hospitality Management",
+      "ar": "Hospitality Management",
+      "tag": "span"
+    },
+    "cms_about_09": {
+      "section": "about",
+      "label": "B1",
+      "en": "B1",
+      "ar": "B1",
+      "tag": "strong"
+    },
+    "cms_about_10": {
+      "section": "about",
+      "label": "English",
+      "en": "English",
+      "ar": "English",
+      "tag": "span"
+    },
+    "cms_about_11": {
+      "section": "about",
+      "label": "3",
+      "en": "3",
+      "ar": "3",
+      "tag": "strong"
+    },
+    "cms_about_12": {
+      "section": "about",
+      "label": "Certifications",
+      "en": "Certifications",
+      "ar": "Certifications",
+      "tag": "span"
+    },
+    "cms_glowgate_01": {
+      "section": "glowgate",
+      "label": "Current Position",
+      "en": "Current Position",
+      "ar": "Current Position",
+      "tag": "small"
+    },
+    "cms_glowgate_02": {
+      "section": "glowgate",
+      "label": "GlowGate Cosmetics",
+      "en": "GlowGate Cosmetics",
+      "ar": "GlowGate Cosmetics",
+      "tag": "h2"
+    },
+    "cms_glowgate_03": {
+      "section": "glowgate",
+      "label": "CURRENT",
+      "en": "CURRENT",
+      "ar": "CURRENT",
+      "tag": "span"
+    },
+    "cms_glowgate_04": {
+      "section": "glowgate",
+      "label": "Jun 2026 – Present",
+      "en": "Jun 2026 – Present",
+      "ar": "Jun 2026 – Present",
+      "tag": "div"
+    },
+    "cms_glowgate_05": {
+      "section": "glowgate",
+      "label": "Managing day-to-day logistics coordination and keeping the order-to-de",
+      "en": "Managing day-to-day logistics coordination and keeping the order-to-delivery workflow organized, accurate and on track.",
+      "ar": "إدارة التنسيق اليومي للوجستيات والحفاظ على سير العمل من الطلب حتى التسليم بشكل منظم ودقيق.",
+      "tag": "p"
+    },
+    "cms_glowgate_06": {
+      "section": "glowgate",
+      "label": "Order Operations",
+      "en": "Order Operations",
+      "ar": "Order Operations",
+      "tag": "b"
+    },
+    "cms_glowgate_07": {
+      "section": "glowgate",
+      "label": "Order preparation, checking and handover.",
+      "en": "Order preparation, checking and handover.",
+      "ar": "Order preparation, checking and handover.",
+      "tag": "span"
+    },
+    "cms_glowgate_08": {
+      "section": "glowgate",
+      "label": "Shipment Coordination",
+      "en": "Shipment Coordination",
+      "ar": "Shipment Coordination",
+      "tag": "b"
+    },
+    "cms_glowgate_09": {
+      "section": "glowgate",
+      "label": "Shipping company coordination and follow-up.",
+      "en": "Shipping company coordination and follow-up.",
+      "ar": "Shipping company coordination and follow-up.",
+      "tag": "span"
+    },
+    "cms_glowgate_10": {
+      "section": "glowgate",
+      "label": "Address Validation",
+      "en": "Address Validation",
+      "ar": "Address Validation",
+      "tag": "b"
+    },
+    "cms_glowgate_11": {
+      "section": "glowgate",
+      "label": "Area and governorate identification.",
+      "en": "Area and governorate identification.",
+      "ar": "Area and governorate identification.",
+      "tag": "span"
+    },
+    "cms_glowgate_12": {
+      "section": "glowgate",
+      "label": "Delivery Tracking",
+      "en": "Delivery Tracking",
+      "ar": "Delivery Tracking",
+      "tag": "b"
+    },
+    "cms_glowgate_13": {
+      "section": "glowgate",
+      "label": "Delayed, returned and undelivered shipment follow-up.",
+      "en": "Delayed, returned and undelivered shipment follow-up.",
+      "ar": "Delayed, returned and undelivered shipment follow-up.",
+      "tag": "span"
+    },
+    "cms_glowgate_14": {
+      "section": "glowgate",
+      "label": "Reporting",
+      "en": "Reporting",
+      "ar": "Reporting",
+      "tag": "b"
+    },
+    "cms_glowgate_15": {
+      "section": "glowgate",
+      "label": "Excel sheets, shipping reports and operational records.",
+      "en": "Excel sheets, shipping reports and operational records.",
+      "ar": "Excel sheets, shipping reports and operational records.",
+      "tag": "span"
+    },
+    "cms_glowgate_16": {
+      "section": "glowgate",
+      "label": "Team Coordination",
+      "en": "Team Coordination",
+      "ar": "Team Coordination",
+      "tag": "b"
+    },
+    "cms_glowgate_17": {
+      "section": "glowgate",
+      "label": "Warehouse, operations, customer service and purchasing.",
+      "en": "Warehouse, operations, customer service and purchasing.",
+      "ar": "Warehouse, operations, customer service and purchasing.",
+      "tag": "span"
+    },
+    "cms_glowgate_18": {
+      "section": "glowgate",
+      "label": "Logistics Focus",
+      "en": "Logistics Focus",
+      "ar": "Logistics Focus",
+      "tag": "div"
+    },
+    "cms_glowgate_19": {
+      "section": "glowgate",
+      "label": "Order → Shipment → Delivery",
+      "en": "Order → Shipment → Delivery",
+      "ar": "Order → Shipment → Delivery",
+      "tag": "h3"
+    },
+    "cms_glowgate_20": {
+      "section": "glowgate",
+      "label": "A structured workflow with attention to accuracy, speed and follow-up.",
+      "en": "A structured workflow with attention to accuracy, speed and follow-up.",
+      "ar": "A structured workflow with attention to accuracy, speed and follow-up.",
+      "tag": "p"
+    },
+    "cms_glowgate_21": {
+      "section": "glowgate",
+      "label": "Order Accuracy",
+      "en": "Order Accuracy",
+      "ar": "Order Accuracy",
+      "tag": "span"
+    },
+    "cms_glowgate_22": {
+      "section": "glowgate",
+      "label": "Daily Control",
+      "en": "Daily Control",
+      "ar": "Daily Control",
+      "tag": "b"
+    },
+    "cms_glowgate_23": {
+      "section": "glowgate",
+      "label": "Shipment Status",
+      "en": "Shipment Status",
+      "ar": "Shipment Status",
+      "tag": "span"
+    },
+    "cms_glowgate_24": {
+      "section": "glowgate",
+      "label": "Follow-up",
+      "en": "Follow-up",
+      "ar": "Follow-up",
+      "tag": "b"
+    },
+    "cms_glowgate_25": {
+      "section": "glowgate",
+      "label": "Data & Reports",
+      "en": "Data & Reports",
+      "ar": "Data & Reports",
+      "tag": "span"
+    },
+    "cms_glowgate_26": {
+      "section": "glowgate",
+      "label": "Organized",
+      "en": "Organized",
+      "ar": "Organized",
+      "tag": "b"
+    },
+    "cms_glowgate_27": {
+      "section": "glowgate",
+      "label": "Workflow",
+      "en": "Workflow",
+      "ar": "Workflow",
+      "tag": "span"
+    },
+    "cms_glowgate_28": {
+      "section": "glowgate",
+      "label": "Continuous Improvement",
+      "en": "Continuous Improvement",
+      "ar": "Continuous Improvement",
+      "tag": "b"
+    },
+    "cms_experience_01": {
+      "section": "experience",
+      "label": "Career Journey",
+      "en": "Career Journey",
+      "ar": "Career Journey",
+      "tag": "small"
+    },
+    "cms_experience_02": {
+      "section": "experience",
+      "label": "Experience",
+      "en": "Experience",
+      "ar": "الخبرة العملية",
+      "tag": "h2"
+    },
+    "cms_experience_03": {
+      "section": "experience",
+      "label": "CURRENT",
+      "en": "CURRENT",
+      "ar": "CURRENT",
+      "tag": "span"
+    },
+    "cms_experience_04": {
+      "section": "experience",
+      "label": "Logistics Manager • Jun 2026 – Present",
+      "en": "Logistics Manager • Jun 2026 – Present",
+      "ar": "Logistics Manager • Jun 2026 – Present",
+      "tag": "div"
+    },
+    "cms_experience_05": {
+      "section": "experience",
+      "label": "Managing and coordinating day-to-day logistics operations across order",
+      "en": "Managing and coordinating day-to-day logistics operations across order preparation, shipment coordination, address validation, inventory flow, documentation and delivery follow-up.",
+      "ar": "Managing and coordinating day-to-day logistics operations across order preparation, shipment coordination, address validation, inventory flow, documentation and delivery follow-up.",
+      "tag": "p"
+    },
+    "cms_experience_06": {
+      "section": "experience",
+      "label": "Coordinate order processing, preparation and shipment handover.",
+      "en": "Coordinate order processing, preparation and shipment handover.",
+      "ar": "Coordinate order processing, preparation and shipment handover.",
+      "tag": "li"
+    },
+    "cms_experience_07": {
+      "section": "experience",
+      "label": "Organize shipping reports and maintain accurate order data.",
+      "en": "Organize shipping reports and maintain accurate order data.",
+      "ar": "Organize shipping reports and maintain accurate order data.",
+      "tag": "li"
+    },
+    "cms_experience_08": {
+      "section": "experience",
+      "label": "Review customer addresses and identify the correct governorate / deliv",
+      "en": "Review customer addresses and identify the correct governorate / delivery area.",
+      "ar": "Review customer addresses and identify the correct governorate / delivery area.",
+      "tag": "li"
+    },
+    "cms_experience_09": {
+      "section": "experience",
+      "label": "Coordinate with shipping partners and follow up on delivery status.",
+      "en": "Coordinate with shipping partners and follow up on delivery status.",
+      "ar": "Coordinate with shipping partners and follow up on delivery status.",
+      "tag": "li"
+    },
+    "cms_experience_10": {
+      "section": "experience",
+      "label": "Track delayed, returned and undelivered shipments and support resoluti",
+      "en": "Track delayed, returned and undelivered shipments and support resolution.",
+      "ar": "Track delayed, returned and undelivered shipments and support resolution.",
+      "tag": "li"
+    },
+    "cms_experience_11": {
+      "section": "experience",
+      "label": "Coordinate with warehouse, operations, customer service and purchasing",
+      "en": "Coordinate with warehouse, operations, customer service and purchasing teams.",
+      "ar": "Coordinate with warehouse, operations, customer service and purchasing teams.",
+      "tag": "li"
+    },
+    "cms_experience_12": {
+      "section": "experience",
+      "label": "Monitor inventory movement and support stock organization.",
+      "en": "Monitor inventory movement and support stock organization.",
+      "ar": "Monitor inventory movement and support stock organization.",
+      "tag": "li"
+    },
+    "cms_experience_13": {
+      "section": "experience",
+      "label": "Prepare and maintain logistics spreadsheets, reports and operational r",
+      "en": "Prepare and maintain logistics spreadsheets, reports and operational records.",
+      "ar": "Prepare and maintain logistics spreadsheets, reports and operational records.",
+      "tag": "li"
+    },
+    "cms_experience_14": {
+      "section": "experience",
+      "label": "Verify phone numbers, shipment information and order details before di",
+      "en": "Verify phone numbers, shipment information and order details before dispatch.",
+      "ar": "Verify phone numbers, shipment information and order details before dispatch.",
+      "tag": "li"
+    },
+    "cms_experience_15": {
+      "section": "experience",
+      "label": "Improve workflows, reduce manual errors and keep daily operations orga",
+      "en": "Improve workflows, reduce manual errors and keep daily operations organized.",
+      "ar": "Improve workflows, reduce manual errors and keep daily operations organized.",
+      "tag": "li"
+    },
+    "cms_experience_16": {
+      "section": "experience",
+      "label": "Crew Member — KFC, Faysal",
+      "en": "Crew Member — KFC, Faysal",
+      "ar": "Crew Member — KFC, Faysal",
+      "tag": "h3"
+    },
+    "cms_experience_17": {
+      "section": "experience",
+      "label": "Jan 2022 – May 2023",
+      "en": "Jan 2022 – May 2023",
+      "ar": "Jan 2022 – May 2023",
+      "tag": "div"
+    },
+    "cms_experience_18": {
+      "section": "experience",
+      "label": "Prepared dishes according to specific recipes.",
+      "en": "Prepared dishes according to specific recipes.",
+      "ar": "Prepared dishes according to specific recipes.",
+      "tag": "li"
+    },
+    "cms_experience_19": {
+      "section": "experience",
+      "label": "Measured ingredients accurately to support food quality.",
+      "en": "Measured ingredients accurately to support food quality.",
+      "ar": "Measured ingredients accurately to support food quality.",
+      "tag": "li"
+    },
+    "cms_experience_20": {
+      "section": "experience",
+      "label": "Applied frying, grilling and steaming techniques.",
+      "en": "Applied frying, grilling and steaming techniques.",
+      "ar": "Applied frying, grilling and steaming techniques.",
+      "tag": "li"
+    },
+    "cms_experience_21": {
+      "section": "experience",
+      "label": "Crew Member — Cuba Cabana, Maadi",
+      "en": "Crew Member — Cuba Cabana, Maadi",
+      "ar": "Crew Member — Cuba Cabana, Maadi",
+      "tag": "h3"
+    },
+    "cms_experience_22": {
+      "section": "experience",
+      "label": "Mar 2021 – Dec 2022",
+      "en": "Mar 2021 – Dec 2022",
+      "ar": "Mar 2021 – Dec 2022",
+      "tag": "div"
+    },
+    "cms_experience_23": {
+      "section": "experience",
+      "label": "Welcomed guests, took orders and answered inquiries.",
+      "en": "Welcomed guests, took orders and answered inquiries.",
+      "ar": "Welcomed guests, took orders and answered inquiries.",
+      "tag": "li"
+    },
+    "cms_experience_24": {
+      "section": "experience",
+      "label": "Recommended food and beverages based on customer needs.",
+      "en": "Recommended food and beverages based on customer needs.",
+      "ar": "Recommended food and beverages based on customer needs.",
+      "tag": "li"
+    },
+    "cms_experience_25": {
+      "section": "experience",
+      "label": "Handled complaints and coordinated order delivery.",
+      "en": "Handled complaints and coordinated order delivery.",
+      "ar": "Handled complaints and coordinated order delivery.",
+      "tag": "li"
+    },
+    "cms_services_01": {
+      "section": "services",
+      "label": "What I Do",
+      "en": "What I Do",
+      "ar": "What I Do",
+      "tag": "small"
+    },
+    "cms_services_02": {
+      "section": "services",
+      "label": "How I create value",
+      "en": "How I create value",
+      "ar": "إزاي بضيف قيمة",
+      "tag": "h2"
+    },
+    "cms_services_03": {
+      "section": "services",
+      "label": "01",
+      "en": "01",
+      "ar": "01",
+      "tag": "div"
+    },
+    "cms_services_04": {
+      "section": "services",
+      "label": "Logistics Management",
+      "en": "Logistics Management",
+      "ar": "إدارة اللوجستيات",
+      "tag": "h3"
+    },
+    "cms_services_05": {
+      "section": "services",
+      "label": "Order flow, shipment coordination, delivery follow-up and daily logist",
+      "en": "Order flow, shipment coordination, delivery follow-up and daily logistics control.",
+      "ar": "إدارة حركة الطلبات، تنسيق الشحنات، متابعة التسليم والعمليات اليومية.",
+      "tag": "p"
+    },
+    "cms_services_06": {
+      "section": "services",
+      "label": "02",
+      "en": "02",
+      "ar": "02",
+      "tag": "div"
+    },
+    "cms_services_07": {
+      "section": "services",
+      "label": "Operations & Organization",
+      "en": "Operations & Organization",
+      "ar": "العمليات والتنظيم",
+      "tag": "h3"
+    },
+    "cms_services_08": {
+      "section": "services",
+      "label": "Reports, accurate records, inventory movement and smoother workflows b",
+      "en": "Reports, accurate records, inventory movement and smoother workflows between teams.",
+      "ar": "التقارير، البيانات الدقيقة، حركة المخزون وتحسين سير العمل بين الفرق.",
+      "tag": "p"
+    },
+    "cms_services_09": {
+      "section": "services",
+      "label": "03",
+      "en": "03",
+      "ar": "03",
+      "tag": "div"
+    },
+    "cms_services_10": {
+      "section": "services",
+      "label": "Customer Experience",
+      "en": "Customer Experience",
+      "ar": "تجربة العملاء",
+      "tag": "h3"
+    },
+    "cms_services_11": {
+      "section": "services",
+      "label": "Hospitality-driven communication, problem solving and attention to ser",
+      "en": "Hospitality-driven communication, problem solving and attention to service details.",
+      "ar": "تواصل قائم على خبرة الضيافة، حل المشكلات والاهتمام بتفاصيل الخدمة.",
+      "tag": "p"
+    },
+    "cms_workflow_01": {
+      "section": "workflow",
+      "label": "Operations Workflow",
+      "en": "Operations Workflow",
+      "ar": "Operations Workflow",
+      "tag": "small"
+    },
+    "cms_workflow_02": {
+      "section": "workflow",
+      "label": "From order to delivery",
+      "en": "From order to delivery",
+      "ar": "من الطلب إلى التسليم",
+      "tag": "h2"
+    },
+    "cms_workflow_03": {
+      "section": "workflow",
+      "label": "ERP / Orders",
+      "en": "ERP / Orders",
+      "ar": "ERP / Orders",
+      "tag": "b"
+    },
+    "cms_workflow_04": {
+      "section": "workflow",
+      "label": "Order intake",
+      "en": "Order intake",
+      "ar": "Order intake",
+      "tag": "span"
+    },
+    "cms_workflow_05": {
+      "section": "workflow",
+      "label": "Preparation",
+      "en": "Preparation",
+      "ar": "Preparation",
+      "tag": "b"
+    },
+    "cms_workflow_06": {
+      "section": "workflow",
+      "label": "Order checking",
+      "en": "Order checking",
+      "ar": "Order checking",
+      "tag": "span"
+    },
+    "cms_workflow_07": {
+      "section": "workflow",
+      "label": "Reporting",
+      "en": "Reporting",
+      "ar": "Reporting",
+      "tag": "b"
+    },
+    "cms_workflow_08": {
+      "section": "workflow",
+      "label": "Data organization",
+      "en": "Data organization",
+      "ar": "Data organization",
+      "tag": "span"
+    },
+    "cms_workflow_09": {
+      "section": "workflow",
+      "label": "Address",
+      "en": "Address",
+      "ar": "Address",
+      "tag": "b"
+    },
+    "cms_workflow_10": {
+      "section": "workflow",
+      "label": "Area validation",
+      "en": "Area validation",
+      "ar": "Area validation",
+      "tag": "span"
+    },
+    "cms_workflow_11": {
+      "section": "workflow",
+      "label": "Shipping",
+      "en": "Shipping",
+      "ar": "Shipping",
+      "tag": "b"
+    },
+    "cms_workflow_12": {
+      "section": "workflow",
+      "label": "Handover",
+      "en": "Handover",
+      "ar": "Handover",
+      "tag": "span"
+    },
+    "cms_workflow_13": {
+      "section": "workflow",
+      "label": "Tracking",
+      "en": "Tracking",
+      "ar": "Tracking",
+      "tag": "b"
+    },
+    "cms_workflow_14": {
+      "section": "workflow",
+      "label": "Status follow-up",
+      "en": "Status follow-up",
+      "ar": "Status follow-up",
+      "tag": "span"
+    },
+    "cms_workflow_15": {
+      "section": "workflow",
+      "label": "Delivery",
+      "en": "Delivery",
+      "ar": "Delivery",
+      "tag": "b"
+    },
+    "cms_workflow_16": {
+      "section": "workflow",
+      "label": "Final outcome",
+      "en": "Final outcome",
+      "ar": "Final outcome",
+      "tag": "span"
+    },
+    "cms_logistics_skills_01": {
+      "section": "logistics-skills",
+      "label": "Logistics Expertise",
+      "en": "Logistics Expertise",
+      "ar": "Logistics Expertise",
+      "tag": "small"
+    },
+    "cms_logistics_skills_02": {
+      "section": "logistics-skills",
+      "label": "What I handle",
+      "en": "What I handle",
+      "ar": "المهام التي أتعامل معها",
+      "tag": "h2"
+    },
+    "cms_logistics_skills_03": {
+      "section": "logistics-skills",
+      "label": "Order Management",
+      "en": "Order Management",
+      "ar": "Order Management",
+      "tag": "h3"
+    },
+    "cms_logistics_skills_04": {
+      "section": "logistics-skills",
+      "label": "Organizing orders from preparation through dispatch.",
+      "en": "Organizing orders from preparation through dispatch.",
+      "ar": "Organizing orders from preparation through dispatch.",
+      "tag": "p"
+    },
+    "cms_logistics_skills_05": {
+      "section": "logistics-skills",
+      "label": "Shipment Coordination",
+      "en": "Shipment Coordination",
+      "ar": "Shipment Coordination",
+      "tag": "h3"
+    },
+    "cms_logistics_skills_06": {
+      "section": "logistics-skills",
+      "label": "Preparing shipping data and coordinating handover with carriers.",
+      "en": "Preparing shipping data and coordinating handover with carriers.",
+      "ar": "Preparing shipping data and coordinating handover with carriers.",
+      "tag": "p"
+    },
+    "cms_logistics_skills_07": {
+      "section": "logistics-skills",
+      "label": "Address Validation",
+      "en": "Address Validation",
+      "ar": "Address Validation",
+      "tag": "h3"
+    },
+    "cms_logistics_skills_08": {
+      "section": "logistics-skills",
+      "label": "Checking addresses and identifying the correct delivery area.",
+      "en": "Checking addresses and identifying the correct delivery area.",
+      "ar": "Checking addresses and identifying the correct delivery area.",
+      "tag": "p"
+    },
+    "cms_logistics_skills_09": {
+      "section": "logistics-skills",
+      "label": "Reports & Excel",
+      "en": "Reports & Excel",
+      "ar": "Reports & Excel",
+      "tag": "h3"
+    },
+    "cms_logistics_skills_10": {
+      "section": "logistics-skills",
+      "label": "Maintaining organized operational and shipping reports.",
+      "en": "Maintaining organized operational and shipping reports.",
+      "ar": "Maintaining organized operational and shipping reports.",
+      "tag": "p"
+    },
+    "cms_skills_01": {
+      "section": "skills",
+      "label": "Capabilities",
+      "en": "Capabilities",
+      "ar": "Capabilities",
+      "tag": "small"
+    },
+    "cms_skills_02": {
+      "section": "skills",
+      "label": "Skills & Strengths",
+      "en": "Skills & Strengths",
+      "ar": "المهارات ونقاط القوة",
+      "tag": "h2"
+    },
+    "cms_skills_03": {
+      "section": "skills",
+      "label": "Customer Service",
+      "en": "Customer Service",
+      "ar": "Customer Service",
+      "tag": "span"
+    },
+    "cms_skills_04": {
+      "section": "skills",
+      "label": "95%",
+      "en": "95%",
+      "ar": "95%",
+      "tag": "b"
+    },
+    "cms_skills_05": {
+      "section": "skills",
+      "label": "Hospitality Ops",
+      "en": "Hospitality Ops",
+      "ar": "Hospitality Ops",
+      "tag": "span"
+    },
+    "cms_skills_06": {
+      "section": "skills",
+      "label": "90%",
+      "en": "90%",
+      "ar": "90%",
+      "tag": "b"
+    },
+    "cms_skills_07": {
+      "section": "skills",
+      "label": "Cooking & Kitchen",
+      "en": "Cooking & Kitchen",
+      "ar": "Cooking & Kitchen",
+      "tag": "span"
+    },
+    "cms_skills_08": {
+      "section": "skills",
+      "label": "88%",
+      "en": "88%",
+      "ar": "88%",
+      "tag": "b"
+    },
+    "cms_skills_09": {
+      "section": "skills",
+      "label": "Communication",
+      "en": "Communication",
+      "ar": "Communication",
+      "tag": "span"
+    },
+    "cms_skills_10": {
+      "section": "skills",
+      "label": "90%",
+      "en": "90%",
+      "ar": "90%",
+      "tag": "b"
+    },
+    "cms_skills_11": {
+      "section": "skills",
+      "label": "Microsoft Office",
+      "en": "Microsoft Office",
+      "ar": "Microsoft Office",
+      "tag": "span"
+    },
+    "cms_skills_12": {
+      "section": "skills",
+      "label": "80%",
+      "en": "80%",
+      "ar": "80%",
+      "tag": "b"
+    },
+    "cms_skills_13": {
+      "section": "skills",
+      "label": "Inventory & POS",
+      "en": "Inventory & POS",
+      "ar": "Inventory & POS",
+      "tag": "span"
+    },
+    "cms_skills_14": {
+      "section": "skills",
+      "label": "82%",
+      "en": "82%",
+      "ar": "82%",
+      "tag": "b"
+    },
+    "cms_skills_15": {
+      "section": "skills",
+      "label": "Technical",
+      "en": "Technical",
+      "ar": "Technical",
+      "tag": "b"
+    },
+    "cms_skills_16": {
+      "section": "skills",
+      "label": "Microsoft Office, hotel management software, POS systems, inventory ma",
+      "en": "Microsoft Office, hotel management software, POS systems, inventory management, kitchen equipment and time management.",
+      "ar": "Microsoft Office, hotel management software, POS systems, inventory management, kitchen equipment and time management.",
+      "tag": "span"
+    },
+    "cms_skills_17": {
+      "section": "skills",
+      "label": "Languages",
+      "en": "Languages",
+      "ar": "Languages",
+      "tag": "b"
+    },
+    "cms_skills_18": {
+      "section": "skills",
+      "label": "Arabic — Native • English — B1",
+      "en": "Arabic — Native • English — B1",
+      "ar": "Arabic — Native • English — B1",
+      "tag": "span"
+    },
+    "cms_skills_19": {
+      "section": "skills",
+      "label": "Certifications",
+      "en": "Certifications",
+      "ar": "Certifications",
+      "tag": "b"
+    },
+    "cms_skills_20": {
+      "section": "skills",
+      "label": "Fidelio • Opera • Italian Kitchen",
+      "en": "Fidelio • Opera • Italian Kitchen",
+      "ar": "Fidelio • Opera • Italian Kitchen",
+      "tag": "span"
+    },
+    "cms_skills_21": {
+      "section": "skills",
+      "label": "Interests",
+      "en": "Interests",
+      "ar": "Interests",
+      "tag": "b"
+    },
+    "cms_skills_22": {
+      "section": "skills",
+      "label": "Cooking and exploring international cuisines.",
+      "en": "Cooking and exploring international cuisines.",
+      "ar": "Cooking and exploring international cuisines.",
+      "tag": "span"
+    },
+    "cms_general_13": {
+      "section": "general",
+      "label": "Education",
+      "en": "Education",
+      "ar": "Education",
+      "tag": "small"
+    },
+    "cms_general_14": {
+      "section": "general",
+      "label": "Education",
+      "en": "Education",
+      "ar": "التعليم",
+      "tag": "h2"
+    },
+    "cms_general_15": {
+      "section": "general",
+      "label": "Bachelor’s Degree in Hospitality Management",
+      "en": "Bachelor’s Degree in Hospitality Management",
+      "ar": "Bachelor’s Degree in Hospitality Management",
+      "tag": "h3"
+    },
+    "cms_general_16": {
+      "section": "general",
+      "label": "Higher Institute for Specific Studies — Giza • May 2024",
+      "en": "Higher Institute for Specific Studies — Giza • May 2024",
+      "ar": "Higher Institute for Specific Studies — Giza • May 2024",
+      "tag": "div"
+    },
+    "cms_general_17": {
+      "section": "general",
+      "label": "Hotel and restaurant management, customer service, hospitality operati",
+      "en": "Hotel and restaurant management, customer service, hospitality operations, food & beverage management, kitchen operations and guest relations.",
+      "ar": "Hotel and restaurant management, customer service, hospitality operations, food & beverage management, kitchen operations and guest relations.",
+      "tag": "p"
+    },
+    "cms_general_18": {
+      "section": "general",
+      "label": "Tourism Secondary School Certificate",
+      "en": "Tourism Secondary School Certificate",
+      "ar": "Tourism Secondary School Certificate",
+      "tag": "h3"
+    },
+    "cms_general_19": {
+      "section": "general",
+      "label": "Orman Secondary Tourism School — Zahraa El Maadi",
+      "en": "Orman Secondary Tourism School — Zahraa El Maadi",
+      "ar": "Orman Secondary Tourism School — Zahraa El Maadi",
+      "tag": "div"
+    },
+    "cms_general_20": {
+      "section": "general",
+      "label": "Specialized study in tourism and hospitality with fundamental industry",
+      "en": "Specialized study in tourism and hospitality with fundamental industry skills.",
+      "ar": "Specialized study in tourism and hospitality with fundamental industry skills.",
+      "tag": "p"
+    },
+    "cms_career_01": {
+      "section": "career",
+      "label": "Career Journey",
+      "en": "Career Journey",
+      "ar": "Career Journey",
+      "tag": "small"
+    },
+    "cms_career_02": {
+      "section": "career",
+      "label": "From hospitality to logistics",
+      "en": "From hospitality to logistics",
+      "ar": "رحلتي من الضيافة إلى اللوجستيات",
+      "tag": "h2"
+    },
+    "cms_career_03": {
+      "section": "career",
+      "label": "Logistics Manager — GlowGate Cosmetics",
+      "en": "Logistics Manager — GlowGate Cosmetics",
+      "ar": "Logistics Manager — GlowGate Cosmetics",
+      "tag": "h3"
+    },
+    "cms_career_04": {
+      "section": "career",
+      "label": "Jun 2026 – Present",
+      "en": "Jun 2026 – Present",
+      "ar": "Jun 2026 – Present",
+      "tag": "div"
+    },
+    "cms_career_05": {
+      "section": "career",
+      "label": "Logistics coordination, shipment preparation, reporting, address valid",
+      "en": "Logistics coordination, shipment preparation, reporting, address validation and delivery follow-up.",
+      "ar": "Logistics coordination, shipment preparation, reporting, address validation and delivery follow-up.",
+      "tag": "p"
+    },
+    "cms_career_06": {
+      "section": "career",
+      "label": "Crew Member — KFC, Faysal",
+      "en": "Crew Member — KFC, Faysal",
+      "ar": "Crew Member — KFC, Faysal",
+      "tag": "h3"
+    },
+    "cms_career_07": {
+      "section": "career",
+      "label": "Jan 2022 – May 2023",
+      "en": "Jan 2022 – May 2023",
+      "ar": "Jan 2022 – May 2023",
+      "tag": "div"
+    },
+    "cms_career_08": {
+      "section": "career",
+      "label": "Food preparation, quality-focused kitchen operations and fast-paced te",
+      "en": "Food preparation, quality-focused kitchen operations and fast-paced teamwork.",
+      "ar": "Food preparation, quality-focused kitchen operations and fast-paced teamwork.",
+      "tag": "p"
+    },
+    "cms_career_09": {
+      "section": "career",
+      "label": "Crew Member — Cuba Cabana, Maadi",
+      "en": "Crew Member — Cuba Cabana, Maadi",
+      "ar": "Crew Member — Cuba Cabana, Maadi",
+      "tag": "h3"
+    },
+    "cms_career_10": {
+      "section": "career",
+      "label": "Mar 2021 – Dec 2022",
+      "en": "Mar 2021 – Dec 2022",
+      "ar": "Mar 2021 – Dec 2022",
+      "tag": "div"
+    },
+    "cms_career_11": {
+      "section": "career",
+      "label": "Guest service, order management, recommendations, complaint handling a",
+      "en": "Guest service, order management, recommendations, complaint handling and team coordination.",
+      "ar": "Guest service, order management, recommendations, complaint handling and team coordination.",
+      "tag": "p"
+    },
+    "cms_projects_01": {
+      "section": "projects",
+      "label": "Selected Work",
+      "en": "Selected Work",
+      "ar": "Selected Work",
+      "tag": "small"
+    },
+    "cms_projects_02": {
+      "section": "projects",
+      "label": "Projects that show how I think",
+      "en": "Projects that show how I think",
+      "ar": "مشاريع تعكس طريقة تفكيري",
+      "tag": "h2"
+    },
+    "cms_projects_03": {
+      "section": "projects",
+      "label": "Logistics Smart Tool",
+      "en": "Logistics Smart Tool",
+      "ar": "Logistics Smart Tool",
+      "tag": "h3"
+    },
+    "cms_projects_04": {
+      "section": "projects",
+      "label": "A smart workflow concept for organizing orders, recognizing addresses,",
+      "en": "A smart workflow concept for organizing orders, recognizing addresses, classifying governorates and preparing shipments.",
+      "ar": "A smart workflow concept for organizing orders, recognizing addresses, classifying governorates and preparing shipments.",
+      "tag": "p"
+    },
+    "cms_projects_05": {
+      "section": "projects",
+      "label": "Excel",
+      "en": "Excel",
+      "ar": "Excel",
+      "tag": "span"
+    },
+    "cms_projects_06": {
+      "section": "projects",
+      "label": "Automation",
+      "en": "Automation",
+      "ar": "Automation",
+      "tag": "span"
+    },
+    "cms_projects_07": {
+      "section": "projects",
+      "label": "AI",
+      "en": "AI",
+      "ar": "AI",
+      "tag": "span"
+    },
+    "cms_projects_08": {
+      "section": "projects",
+      "label": "View details →",
+      "en": "View details →",
+      "ar": "View details →",
+      "tag": "button"
+    },
+    "cms_projects_09": {
+      "section": "projects",
+      "label": "Discord Game Bot",
+      "en": "Discord Game Bot",
+      "ar": "Discord Game Bot",
+      "tag": "h3"
+    },
+    "cms_projects_10": {
+      "section": "projects",
+      "label": "A monitoring and notification project concept using Node.js, Discord A",
+      "en": "A monitoring and notification project concept using Node.js, Discord APIs and webhooks.",
+      "ar": "A monitoring and notification project concept using Node.js, Discord APIs and webhooks.",
+      "tag": "p"
+    },
+    "cms_projects_11": {
+      "section": "projects",
+      "label": "Node.js",
+      "en": "Node.js",
+      "ar": "Node.js",
+      "tag": "span"
+    },
+    "cms_projects_12": {
+      "section": "projects",
+      "label": "Discord",
+      "en": "Discord",
+      "ar": "Discord",
+      "tag": "span"
+    },
+    "cms_projects_13": {
+      "section": "projects",
+      "label": "Webhooks",
+      "en": "Webhooks",
+      "ar": "Webhooks",
+      "tag": "span"
+    },
+    "cms_projects_14": {
+      "section": "projects",
+      "label": "View details →",
+      "en": "View details →",
+      "ar": "View details →",
+      "tag": "button"
+    },
+    "cms_projects_15": {
+      "section": "projects",
+      "label": "Nanna Reply App",
+      "en": "Nanna Reply App",
+      "ar": "Nanna Reply App",
+      "tag": "h3"
+    },
+    "cms_projects_16": {
+      "section": "projects",
+      "label": "Android auto-reply app concept for WhatsApp and WhatsApp Business with",
+      "en": "Android auto-reply app concept for WhatsApp and WhatsApp Business with a custom interface.",
+      "ar": "Android auto-reply app concept for WhatsApp and WhatsApp Business with a custom interface.",
+      "tag": "p"
+    },
+    "cms_projects_17": {
+      "section": "projects",
+      "label": "Android",
+      "en": "Android",
+      "ar": "Android",
+      "tag": "span"
+    },
+    "cms_projects_18": {
+      "section": "projects",
+      "label": "WhatsApp",
+      "en": "WhatsApp",
+      "ar": "WhatsApp",
+      "tag": "span"
+    },
+    "cms_projects_19": {
+      "section": "projects",
+      "label": "Automation",
+      "en": "Automation",
+      "ar": "Automation",
+      "tag": "span"
+    },
+    "cms_projects_20": {
+      "section": "projects",
+      "label": "View details →",
+      "en": "View details →",
+      "ar": "View details →",
+      "tag": "button"
+    },
+    "cms_general_21": {
+      "section": "general",
+      "label": "FOR HR & RECRUITERS",
+      "en": "FOR HR & RECRUITERS",
+      "ar": "FOR HR & RECRUITERS",
+      "tag": "small"
+    },
+    "cms_general_22": {
+      "section": "general",
+      "label": "Looking for a reliable operations professional?",
+      "en": "Looking for a reliable operations professional?",
+      "ar": "Looking for a reliable operations professional?",
+      "tag": "h3"
+    },
+    "cms_general_23": {
+      "section": "general",
+      "label": "Download my CV or contact me directly for opportunities and profession",
+      "en": "Download my CV or contact me directly for opportunities and professional inquiries.",
+      "ar": "Download my CV or contact me directly for opportunities and professional inquiries.",
+      "tag": "p"
+    },
+    "cms_general_24": {
+      "section": "general",
+      "label": "⬇ CV",
+      "en": "⬇ CV",
+      "ar": "⬇ CV",
+      "tag": "a"
+    },
+    "cms_general_25": {
+      "section": "general",
+      "label": "✉ Email",
+      "en": "✉ Email",
+      "ar": "✉ Email",
+      "tag": "a"
+    },
+    "cms_general_26": {
+      "section": "general",
+      "label": "☎ Call",
+      "en": "☎ Call",
+      "ar": "☎ Call",
+      "tag": "a"
+    },
+    "cms_cv_01": {
+      "section": "cv",
+      "label": "MY RESUME",
+      "en": "MY RESUME",
+      "ar": "MY RESUME",
+      "tag": "small"
+    },
+    "cms_cv_02": {
+      "section": "cv",
+      "label": "A closer look at my experience",
+      "en": "A closer look at my experience",
+      "ar": "شوف خبرتي بشكل كامل",
+      "tag": "h2"
+    },
+    "cms_cv_03": {
+      "section": "cv",
+      "label": "Review the CV directly here, or download a copy when you're ready.",
+      "en": "Review the CV directly here, or download a copy when you're ready.",
+      "ar": "راجع الـCV مباشرة من هنا أو حمّل نسخة منه وقت ما تحب.",
+      "tag": "p"
+    },
+    "cms_cv_04": {
+      "section": "cv",
+      "label": "⬇ Download CV",
+      "en": "⬇ Download CV",
+      "ar": "⬇ Download CV",
+      "tag": "a"
+    },
+    "cms_cv_05": {
+      "section": "cv",
+      "label": "📄",
+      "en": "📄",
+      "ar": "📄",
+      "tag": "div"
+    },
+    "cms_cv_06": {
+      "section": "cv",
+      "label": "Abdalrahman Osman — CV",
+      "en": "Abdalrahman Osman — CV",
+      "ar": "Abdalrahman Osman — CV",
+      "tag": "h3"
+    },
+    "cms_cv_07": {
+      "section": "cv",
+      "label": "Open or download my latest CV when you are ready.",
+      "en": "Open or download my latest CV when you are ready.",
+      "ar": "Open or download my latest CV when you are ready.",
+      "tag": "p"
+    },
+    "cms_cv_08": {
+      "section": "cv",
+      "label": "View CV",
+      "en": "View CV",
+      "ar": "View CV",
+      "tag": "a"
+    },
+    "cms_cv_09": {
+      "section": "cv",
+      "label": "Download CV",
+      "en": "Download CV",
+      "ar": "Download CV",
+      "tag": "a"
+    },
+    "cms_contact_01": {
+      "section": "contact",
+      "label": "LET'S CONNECT",
+      "en": "LET'S CONNECT",
+      "ar": "LET'S CONNECT",
+      "tag": "small"
+    },
+    "cms_contact_02": {
+      "section": "contact",
+      "label": "Have an opportunity in mind?",
+      "en": "Have an opportunity in mind?",
+      "ar": "عندك فرصة مناسبة؟",
+      "tag": "h2"
+    },
+    "cms_contact_03": {
+      "section": "contact",
+      "label": "Let's connect and talk about how I can contribute.",
+      "en": "Let's connect and talk about how I can contribute.",
+      "ar": "تواصل معي وخلينا نتكلم عن إزاي أقدر أضيف قيمة.",
+      "tag": "p"
+    },
+    "cms_contact_04": {
+      "section": "contact",
+      "label": "✈ Email Me",
+      "en": "✈ Email Me",
+      "ar": "✈ Email Me",
+      "tag": "a"
+    },
+    "cms_contact_05": {
+      "section": "contact",
+      "label": "☎ +20 110 101 9467",
+      "en": "☎ +20 110 101 9467",
+      "ar": "☎ +20 110 101 9467",
+      "tag": "a"
+    },
+    "cms_projectmodal_01": {
+      "section": "projectModal",
+      "label": "Featured Project",
+      "en": "Featured Project",
+      "ar": "Featured Project",
+      "tag": "div"
+    },
+    "cms_general_27": {
+      "section": "general",
+      "label": "© 2026 Abdalrahman Osman",
+      "en": "© 2026 Abdalrahman Osman",
+      "ar": "© 2026 Abdalrahman Osman",
+      "tag": "span"
+    },
+    "cms_general_28": {
+      "section": "general",
+      "label": "Hospitality • Tourism • Operations • Technology",
+      "en": "Hospitality • Tourism • Operations • Technology",
+      "ar": "Hospitality • Tourism • Operations • Technology",
+      "tag": "span"
+    }
+  },
+  "projectData": {
+    "logistics": {
+      "title": "Logistics Smart Tool",
+      "desc": "A practical logistics workflow concept inspired by real order and shipping operations.",
+      "items": [
+        "Order organization and preparation",
+        "Address validation and governorate classification",
+        "Shipping reports and delivery follow-up",
+        "Workflow automation and error reduction"
+      ],
+      "tags": [
+        "Excel",
+        "Automation",
+        "AI"
+      ]
+    },
+    "discord": {
+      "title": "Discord Game Bot",
+      "desc": "A monitoring and notification project concept for game-server activity.",
+      "items": [
+        "Server status monitoring",
+        "Discord notifications",
+        "Webhook-based updates",
+        "Node.js project structure"
+      ],
+      "tags": [
+        "Node.js",
+        "Discord",
+        "Webhooks"
+      ]
+    },
+    "nanna": {
+      "title": "Nanna Reply App",
+      "desc": "An Android auto-reply concept designed for WhatsApp and WhatsApp Business.",
+      "items": [
+        "Automatic reply workflow",
+        "WhatsApp and WhatsApp Business support concept",
+        "Custom interface and settings",
+        "Focus on preventing repeated replies"
+      ],
+      "tags": [
+        "Android",
+        "WhatsApp",
+        "Automation"
+      ]
+    }
+  },
+  "settings": {
+    "nav": {
+      "homeEn": "Home",
+      "homeAr": "الرئيسية",
+      "aboutEn": "About",
+      "aboutAr": "عني",
+      "careerEn": "Career",
+      "careerAr": "المسار",
+      "experienceEn": "Experience",
+      "experienceAr": "الخبرة",
+      "skillsEn": "Skills",
+      "skillsAr": "المهارات",
+      "workflowEn": "Workflow",
+      "workflowAr": "العمليات",
+      "servicesEn": "Services",
+      "servicesAr": "مجالاتي",
+      "projectsEn": "Projects",
+      "projectsAr": "المشاريع",
+      "contactEn": "Contact",
+      "contactAr": "تواصل"
+    },
+    "theme": {
+      "accent": "#f3b75b"
+    },
+    "links": {
+      "email": "abdalrahmanosman0@gmail.com",
+      "phone": "+201101019467",
+      "linkedin": "https://www.linkedin.com/"
+    },
+    "visibility": {
+      "about": true,
+      "glowgate": true,
+      "experience": true,
+      "services": true,
+      "workflow": true,
+      "logistics-skills": true,
+      "skills": true,
+      "career": true,
+      "projects": true,
+      "cv": true,
+      "contact": true
+    }
+  }
+}
