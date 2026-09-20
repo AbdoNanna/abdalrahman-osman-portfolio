@@ -80,8 +80,20 @@
     {
       "id": "logistics",
       "title": "Logistics Management",
-      "icon": "◈",
-      "desc": "Order flow, shipment coordination, delivery follow-up and daily logistics control."
+      "desc": "Order flow, shipment coordination, delivery follow-up and daily logistics control.",
+      "icon": "◈"
+    },
+    {
+      "id": "operations",
+      "title": "Operations & Organization",
+      "desc": "Reports, accurate records, inventory movement and smoother workflows between teams.",
+      "icon": "✦"
+    },
+    {
+      "id": "customer",
+      "title": "Customer Experience",
+      "desc": "Hospitality-driven communication, problem solving and attention to service details.",
+      "icon": "◎"
     }
   ],
   "skillData": [
@@ -1803,19 +1815,6 @@
       "email": "abdalrahmanosman0@gmail.com",
       "phone": "+201101019467",
       "linkedin": "https://www.linkedin.com/"
-    },
-    "visibility": {
-      "about": true,
-      "glowgate": true,
-      "experience": true,
-      "services": true,
-      "workflow": true,
-      "logistics-skills": true,
-      "skills": true,
-      "career": true,
-      "projects": true,
-      "cv": true,
-      "contact": true
     }
   }
 }

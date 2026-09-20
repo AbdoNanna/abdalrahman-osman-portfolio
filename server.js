@@ -47,32 +47,78 @@ const defaultData={
  },
  settings:{nav:{homeEn:'Home',homeAr:'الرئيسية',aboutEn:'About',aboutAr:'عني',careerEn:'Career',careerAr:'المسار',experienceEn:'Experience',experienceAr:'الخبرة',skillsEn:'Skills',skillsAr:'المهارات',workflowEn:'Workflow',workflowAr:'العمليات',servicesEn:'Services',servicesAr:'مجالاتي',projectsEn:'Projects',projectsAr:'المشاريع',contactEn:'Contact',contactAr:'تواصل'},theme:{accent:'#f3b75b'},links:{email:'abdalrahmanosman0@gmail.com',phone:'+201101019467',linkedin:'https://www.linkedin.com/'}}
 };
+
 function clone(x){return JSON.parse(JSON.stringify(x));}
-function readData(){try{if(!fs.existsSync(DATA_FILE))return clone(defaultData);const p=JSON.parse(fs.readFileSync(DATA_FILE,'utf8'));return {...clone(defaultData),...(p&&typeof p==='object'?p:{})}}catch(e){console.error('Read data:',e.message);return clone(defaultData)}}
-function writeData(d){const tmp=DATA_FILE+'.tmp';fs.writeFileSync(tmp,JSON.stringify(d,null,2),'utf8');fs.renameSync(tmp,DATA_FILE);return d}
-if(!fs.existsSync(DATA_FILE))writeData(defaultData);
-function send(res,code,body,type='application/json; charset=utf-8'){res.writeHead(code,{'Content-Type':type,'Cache-Control':'no-store'});res.end(type.startsWith('application/json')?JSON.stringify(body):body)}
+const DATABASE_URL=process.env.DATABASE_URL||'';
+let pool=null;
+let dbReady=false;
+let dataCache=null;
+const AUTH_SECRET=process.env.AUTH_SECRET||crypto.createHash('sha256').update(`AO_PORTFOLIO_AUTH|${ADMIN_PASSWORD}|v35`).digest('hex');
+if(!process.env.ADMIN_PASSWORD || process.env.ADMIN_PASSWORD==='Change-This-Strong-Password') console.warn('WARNING: Set a strong ADMIN_PASSWORD environment variable before production use.');
+if(DATABASE_URL){
+  try{
+    const {Pool}=require('pg');
+    pool=new Pool({connectionString:DATABASE_URL,ssl:{rejectUnauthorized:false},max:3});
+  }catch(e){console.error('Postgres driver unavailable:',e.message);pool=null;}
+}
+async function initStorage(){
+  if(!pool){
+    dataCache=readJsonData();
+    return;
+  }
+  await pool.query(`CREATE TABLE IF NOT EXISTS portfolio_data (id INTEGER PRIMARY KEY, data JSONB NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW())`);
+  const r=await pool.query('SELECT data FROM portfolio_data WHERE id=1');
+  if(r.rows.length===0){const seed=readJsonData();await pool.query('INSERT INTO portfolio_data(id,data) VALUES(1,$1::jsonb)',[JSON.stringify(seed)]);dataCache=seed;}
+  else dataCache=mergeData(r.rows[0].data);
+  dbReady=true;
+}
+function readJsonData(){try{if(!fs.existsSync(DATA_FILE))return clone(defaultData);const p=JSON.parse(fs.readFileSync(DATA_FILE,'utf8'));return mergeData(p)}catch(e){console.error('Read data:',e.message);return clone(defaultData)}}
+function mergeData(p){return {...clone(defaultData),...(p&&typeof p==='object'?p:{})}}
+async function readData(){
+  if(pool&&dbReady){const r=await pool.query('SELECT data FROM portfolio_data WHERE id=1');if(r.rows[0]){dataCache=mergeData(r.rows[0].data);return clone(dataCache)}}
+  if(!dataCache)dataCache=readJsonData();
+  return clone(dataCache);
+}
+async function writeData(d){
+  const next=mergeData(d); dataCache=next;
+  if(pool&&dbReady){await pool.query('INSERT INTO portfolio_data(id,data,updated_at) VALUES(1,$1::jsonb,NOW()) ON CONFLICT(id) DO UPDATE SET data=EXCLUDED.data,updated_at=NOW()',[JSON.stringify(next)]);}
+  else {const tmp=DATA_FILE+'.tmp';fs.writeFileSync(tmp,JSON.stringify(next,null,2),'utf8');fs.renameSync(tmp,DATA_FILE);}
+  return clone(next);
+}
+if(!fs.existsSync(DATA_FILE))fs.writeFileSync(DATA_FILE,JSON.stringify(defaultData,null,2),'utf8');
+function send(res,code,body,type='application/json; charset=utf-8'){res.writeHead(code,{'Content-Type':type,'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin'});res.end(type.startsWith('application/json')?JSON.stringify(body):body)}
 function parseJson(req){return new Promise((resolve,reject)=>{let n=0,c=[];req.on('data',x=>{n+=x.length;if(n>MAX_BODY){reject(Object.assign(new Error('Request too large'),{status:413}));req.destroy();return}c.push(x)});req.on('end',()=>{try{resolve(JSON.parse(Buffer.concat(c).toString('utf8')||'{}'))}catch(e){reject(Object.assign(new Error('Invalid JSON'),{status:400}))}});req.on('error',reject)})}
 function token(req){const h=req.headers.authorization||'';return h.startsWith('Bearer ')?h.slice(7):''}
-const AUTH_SECRET=crypto.createHash('sha256').update(`AO_PORTFOLIO_AUTH|${ADMIN_PASSWORD}|v32`).digest('hex');
-function makeToken(){const exp=Date.now()+12*60*60*1000;const payload=Buffer.from(JSON.stringify({exp}),'utf8').toString('base64url');const sig=crypto.createHmac('sha256',AUTH_SECRET).update(payload).digest('base64url');return payload+'.'+sig}
-function authed(req){const t=token(req);if(!t)return false;const parts=t.split('.');if(parts.length!==2)return false;try{const payload=JSON.parse(Buffer.from(parts[0],'base64url').toString('utf8'));if(!payload.exp||Number(payload.exp)<Date.now())return false;const expected=crypto.createHmac('sha256',AUTH_SECRET).update(parts[0]).digest('base64url');return crypto.timingSafeEqual(Buffer.from(parts[1]),Buffer.from(expected))}catch(e){return false}}
+function makeToken(){const exp=Date.now()+12*60*60*1000;const payload=Buffer.from(JSON.stringify({exp,iat:Date.now()}),'utf8').toString('base64url');const sig=crypto.createHmac('sha256',AUTH_SECRET).update(payload).digest('base64url');return payload+'.'+sig}
+function authed(req){const t=token(req);if(!t)return false;const parts=t.split('.');if(parts.length!==2)return false;try{const payload=JSON.parse(Buffer.from(parts[0],'base64url').toString('utf8'));if(!payload.exp||Number(payload.exp)<Date.now())return false;const expected=crypto.createHmac('sha256',AUTH_SECRET).update(parts[0]).digest('base64url');const a=Buffer.from(parts[1]),b=Buffer.from(expected);return a.length===b.length&&crypto.timingSafeEqual(a,b)}catch(e){return false}}
+const loginAttempts=new Map();
+function loginAllowed(ip){const now=Date.now(),x=loginAttempts.get(ip)||{n:0,t:now};if(now-x.t>15*60*1000){x.n=0;x.t=now}return x.n<10}
+function recordFail(ip){const now=Date.now(),x=loginAttempts.get(ip)||{n:0,t:now};if(now-x.t>15*60*1000){x.n=0;x.t=now}x.n++;loginAttempts.set(ip,x)}
 function safePath(u){let p=decodeURIComponent(u.split('?')[0]);if(p==='/admin'||p==='/admin/')p='/admin.html';if(!p||p==='/')p='/index.html';const t=path.normalize(path.join(ROOT,p));if(t!==ROOT&&!t.startsWith(ROOT+path.sep))return null;return t}
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.pdf':'application/pdf','.json':'application/json; charset=utf-8','.ico':'image/x-icon'};
-function serve(req,res){const f=safePath(req.url);if(!f)return send(res,403,{error:'Forbidden'});fs.stat(f,(e,s)=>{if(e||!s.isFile())return send(res,404,{error:'Not found'});res.writeHead(200,{'Content-Type':mime[path.extname(f).toLowerCase()]||'application/octet-stream','Cache-Control':'no-cache'});fs.createReadStream(f).pipe(res)})}
+function serve(req,res){const f=safePath(req.url);if(!f)return send(res,403,{error:'Forbidden'});fs.stat(f,(e,s)=>{if(e||!s.isFile())return send(res,404,{error:'Not found'});res.writeHead(200,{'Content-Type':mime[path.extname(f).toLowerCase()]||'application/octet-stream','Cache-Control':'no-cache','X-Content-Type-Options':'nosniff'});fs.createReadStream(f).pipe(res)})}
 const allowed=['firstName','lastName','role','company','start','leadEn','leadAr','bioEn','bioAr','aboutTitleEn','aboutTitleAr','aboutEn','aboutAr','currentIntroEn','currentIntroAr','email','phone','linkedin','accent','project1Title','project1Desc','project2Title','project2Desc','project3Title','project3Desc','profileImage','cvData','seoTitle','seoDescription','cms','projectData','experienceData','serviceData','skillData','educationData','certificationData','settings'];
-const server=http.createServer(async(req,res)=>{try{const u=new URL(req.url,`http://${req.headers.host||'localhost'}`);
- if(req.method==='GET'&&u.pathname==='/api/health')return send(res,200,{ok:true,storage:'json',cmsFields:Object.keys(cmsDefaults).length});
- if(req.method==='GET'&&u.pathname==='/api/content')return send(res,200,readData());
- if(req.method==='GET'&&u.pathname==='/api/session'){return send(res,200,{ok:true,localNoAuth:true});}
- if(req.method==='POST'&&u.pathname==='/api/login'){return send(res,200,{token:'local-no-auth'})}
- if(req.method==='PUT'&&u.pathname==='/api/content'){const inc=await parseJson(req),cur=readData(),next=clone(cur);for(const k of allowed){if(inc[k]===undefined)continue;if(['cms','projectData','experienceData','serviceData','skillData','educationData','certificationData','settings'].includes(k)){if(inc[k]&&typeof inc[k]==='object')next[k]=inc[k];continue}if(typeof inc[k]==='string'){if(inc[k].trim()!==''||['profileImage','cvData'].includes(k))next[k]=inc[k]}}
- if(next.profileImage&&!/^data:image\/(jpeg|jpg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(next.profileImage))next.profileImage=cur.profileImage;
- if(next.cvData&&!/^data:application\/pdf;base64,[A-Za-z0-9+/=]+$/.test(next.cvData))next.cvData=cur.cvData;
- if(next.accent&&!/^#[0-9a-fA-F]{6}$/.test(next.accent))next.accent=cur.accent;
- return send(res,200,writeData(next));}
- if(req.method==='POST'&&u.pathname==='/api/reset'){return send(res,200,writeData(clone(defaultData)))}
- if(req.method==='POST'&&u.pathname==='/api/logout'){return send(res,200,{ok:true})}
+const server=http.createServer(async(req,res)=>{try{const u=new URL(req.url,`http://${req.headers.host||'localhost'}`);const ip=(req.headers['x-forwarded-for']||req.socket.remoteAddress||'unknown').toString().split(',')[0].trim();
+ if(req.method==='GET'&&u.pathname==='/api/health')return send(res,200,{ok:true,storage:pool&&dbReady?'postgres':'json',cmsFields:Object.keys(cmsDefaults).length});
+ if(req.method==='GET'&&u.pathname==='/api/content')return send(res,200,await readData());
+ if(req.method==='GET'&&u.pathname==='/api/session'){if(!authed(req))return send(res,401,{error:'Unauthorized'});return send(res,200,{ok:true,authenticated:true});}
+ if(req.method==='POST'&&u.pathname==='/api/login'){
+   if(!loginAllowed(ip))return send(res,429,{error:'Too many login attempts. Try again later.'});
+   const body=await parseJson(req),pass=String(body.password||'');
+   const a=Buffer.from(pass),b=Buffer.from(ADMIN_PASSWORD||''); const ok=Boolean(ADMIN_PASSWORD)&&a.length===b.length&&crypto.timingSafeEqual(a,b);
+   if(!ok){recordFail(ip);return send(res,401,{error:'Invalid password'});}loginAttempts.delete(ip);return send(res,200,{token:makeToken(),expiresIn:43200});
+ }
+ if(req.method==='PUT'&&u.pathname==='/api/content'){
+   if(!authed(req))return send(res,401,{error:'Unauthorized'});
+   const inc=await parseJson(req),cur=await readData(),next=clone(cur);
+   for(const k of allowed){if(inc[k]===undefined)continue;if(['cms','projectData','experienceData','serviceData','skillData','educationData','certificationData','settings'].includes(k)){if(inc[k]&&typeof inc[k]==='object')next[k]=inc[k];continue}if(typeof inc[k]==='string'){if(inc[k].trim()!==''||['profileImage','cvData'].includes(k))next[k]=inc[k]}}
+   if(next.profileImage&&!/^data:image\/(jpeg|jpg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(next.profileImage))next.profileImage=cur.profileImage;
+   if(next.cvData&&!/^data:application\/pdf;base64,[A-Za-z0-9+/=]+$/.test(next.cvData))next.cvData=cur.cvData;
+   if(next.accent&&!/^#[0-9a-fA-F]{6}$/.test(next.accent))next.accent=cur.accent;
+   return send(res,200,await writeData(next));
+ }
+ if(req.method==='POST'&&u.pathname==='/api/reset'){if(!authed(req))return send(res,401,{error:'Unauthorized'});return send(res,200,await writeData(clone(defaultData)))}
+ if(req.method==='POST'&&u.pathname==='/api/logout')return send(res,200,{ok:true});
  return serve(req,res);
 }catch(e){console.error(e);return send(res,e.status||500,{error:e.message||'Server error'})}});
-server.listen(PORT,()=>console.log(`AO Portfolio running at http://localhost:${PORT}`));
+initStorage().then(()=>{const host='0.0.0.0';server.listen(PORT,host,()=>console.log(`AO Portfolio V35 running on ${host}:${PORT} | storage=${pool&&dbReady?'postgres':'json'}`));}).catch(e=>{console.error('Storage init failed:',e);process.exit(1)});

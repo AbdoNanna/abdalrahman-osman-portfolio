@@ -1,0 +1,16 @@
+{
+  "name": "abdalrahman-osman-portfolio",
+  "version": "35.0.0",
+  "private": true,
+  "description": "Abdalrahman Osman portfolio with secure CMS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}
